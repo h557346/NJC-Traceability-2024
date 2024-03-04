@@ -1,6 +1,9 @@
 import streamlit as st
 import pyodbc
 import psycopg2
+import pandas as pd
+import numpy as np
+
 
 hostname = 'localhost'
 database = 'Honeywell Data Project'
@@ -38,5 +41,4 @@ st.text_input(label="", placeholder="Scan your H-Number")
 st.text_input(label="", placeholder="Scan the Planned Order Number")
 st.text_input(label="", placeholder="Scan the Line ID")
 st.text_input(label="", placeholder="Scan the Products Serial Number")
-
-
+df = pd.DataFrame()
