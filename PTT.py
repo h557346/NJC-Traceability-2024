@@ -37,8 +37,8 @@ finally:
 st.title("Process Tracking Tool")
 st.write("This app is used to provide <b>Traceability</b> for the manufacturing process.",
          unsafe_allow_html=True)
-st.text_input(label="", placeholder="Scan your H-Number")
-st.text_input(label="", placeholder="Scan the Planned Order Number")
-st.text_input(label="", placeholder="Scan the Line ID")
-st.text_input(label="", placeholder="Scan the Products Serial Number")
+h_number = st.text_input(label="", placeholder="Scan your H-Number")
+PO_number = st.text_input(label="", placeholder="Scan the Planned Order Number")
+Line_ID = st.text_input(label="", placeholder="Scan the Line ID")
+SN = st.text_input(label="", placeholder="Scan the Products Serial Number")
 df = pd.DataFrame()
